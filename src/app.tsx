@@ -528,6 +528,32 @@ function App() {
             </Card>
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="mt-16 border-t pt-8 text-center text-muted-foreground text-sm">
+          <p className="mb-2">
+            Made with ❤️ for the GitLab community by{" "}
+            <a
+              className="underline hover:text-foreground"
+              href="https://github.com/giacomoferretti"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Giacomo Ferretti
+            </a>
+          </p>
+          <p>
+            <a
+              className="underline hover:text-foreground"
+              href="https://github.com/giacomoferretti/gitlab-icon-generator"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>{" "}
+            • If you like this tool, please consider giving it a star! ⭐
+          </p>
+        </footer>
       </div>
     </div>
   );
