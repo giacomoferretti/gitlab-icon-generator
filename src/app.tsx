@@ -219,11 +219,11 @@ function App() {
   const [selectedIconData, setSelectedIconData] = useState<Icon | null>(null);
   const [fontData, setFontData] = useState<FontOptions[]>([]);
 
-  const [debouncedOutputSize] = useDebounce(outputSize, 1000);
+  const [debouncedOutputSize] = useDebounce(outputSize, 200);
 
   // Calculate actual icon size from percentage (using local state for immediate feedback)
   const iconSize = Math.round((iconSizePercentage / 100) * outputSize);
-  const [debouncedIconSize] = useDebounce(iconSize, 1000);
+  const [debouncedIconSize] = useDebounce(iconSize, 200);
 
   // Function to find the color name by values
   const findColorName = (
