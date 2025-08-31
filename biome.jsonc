@@ -1,0 +1,33 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "extends": ["ultracite"],
+  "files": {
+    "ignoreUnknown": false,
+    "includes": ["src/**", "vite.config.ts", "!src/styles.css"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "trailingCommas": "all"
+    }
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "noMagicNumbers": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "off",
+        "noImgElement": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": {
+          "level": "error",
+          "options": {
+            "hooks": [{ "name": "useObjectUrl", "stableResult": [1] }]
+          }
+        }
+      }
+    }
+  }
+}
