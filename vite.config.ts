@@ -9,4 +9,5 @@ export default defineConfig({
   define: {
     "process.env": {},
   },
+  base: process.env.VITE_REPO_NAME ? `/${process.env.VITE_REPO_NAME}/` : "/",
 });
