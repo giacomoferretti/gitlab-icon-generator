@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider>
       <NuqsAdapter>
         <App />
-        <div className="fixed right-0 bottom-0">
+        <div className="fixed right-4 bottom-4">
           <ThemeToggle />
         </div>
       </NuqsAdapter>
